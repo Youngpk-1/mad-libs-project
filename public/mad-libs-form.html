@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mad Libs Form</title>
+  </head>
+  <body>
+    <div class="d-flex row g-4 container mt-5 text-center">
+      <h1>Welcome To My Mad Libs!</h1>
+      <form method="GET" action="/create-mad-libs" class="row g-3">
+        <div class="d-flex flex-column gap-3 align-items-center">
+          <div class="d-flex flex-column gap-3 align-items-center">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Name Here"
+              id="name"
+              required
+            />
+            <label for="adjective1">Adjective 1:</label>
+            <input
+              type="text"
+              name="adjective1"
+              placeholder="Enter Adjective 1"
+              id="adjective1"
+              required
+            />
+
+            <label for="noun1">Noun 1:</label>
+            <input
+              type="text"
+              name="noun1"
+              placeholder="Enter Noun 1"
+              required
+            />
+
+            <label for="verb">Verb:</label>
+            <input
+              type="text"
+              name="verb"
+              placeholder="Enter a Verb"
+              required
+            />
+
+            <label for="adjective2">Adjective 2:</label>
+            <input
+              type="text"
+              name="adjective2"
+              placeholder="Enter Adjective 2"
+              id="adjective2"
+              required
+            />
+
+            <label for="noun2">Noun 2:</label>
+            <input
+              type="text"
+              name="noun2"
+              placeholder="Enter Noun 2"
+              required
+            />
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-success" type="submit">
+            Create Mad Libs!
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
